@@ -9,3 +9,4 @@ dist/
 .tef_dist/*
   .edgeone
 .codebuddy
+.agents
