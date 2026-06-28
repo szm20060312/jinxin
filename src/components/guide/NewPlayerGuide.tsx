@@ -109,14 +109,15 @@ export function NewPlayerGuide() {
   const [visible, setVisible] = useState(false);
   const [step, setStep] = useState(0);
 
-  // 每次进入游戏都弹出教程
+  // 进游戏时弹出一次，后续切换页面不再弹出
   useEffect(() => {
     if (!user) return;
     if (state.phase === 'game_over') return;
 
     const timer = setTimeout(() => setVisible(true), 500);
     return () => clearTimeout(timer);
-  }, [user, state.phase]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const completeGuide = useCallback(() => {
     setVisible(false);
