@@ -10,3 +10,4 @@ dist/
   .edgeone
 .codebuddy
 .agents
+video/*.mp4
