@@ -4,9 +4,9 @@
 >
 > 模拟晋商票号经营 · 文字策略 Web 游戏 · EdgeOne 全栈部署 · v1.0 正式发布
 
-| 🎮 在线体验 | 📦 源码 |
-|------------|--------|
-| **[jinxin-twlhpwzz.edgeone.cool](https://jinxin-twlhpwzz.edgeone.cool)** | [github.com/szm20060312/jinxin](https://github.com/szm20060312/jinxin) |
+| 🎮 在线体验 | 📦 源码 | 🎬 演示视频 |
+|------------|--------|------------|
+| **[jinxin-twlhpwzz.edgeone.cool](https://jinxin-twlhpwzz.edgeone.cool)** | [github.com/szm20060312/jinxin](https://github.com/szm20060312/jinxin) | `video/晋·信.mp4` |
 
 ---
 
