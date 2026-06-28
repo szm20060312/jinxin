@@ -6,7 +6,7 @@
 
 | 🎮 在线体验 | 📦 源码 | 🎬 演示视频 |
 |------------|--------|------------|
-| **[jinxin-twlhpwzz.edgeone.cool](https://jinxin-twlhpwzz.edgeone.cool)** | [github.com/szm20060312/jinxin](https://github.com/szm20060312/jinxin) | `video/晋·信.mp4` |
+| **[jinxin-twlhpwzz.edgeone.cool](https://jinxin-twlhpwzz.edgeone.cool)** | [github.com/szm20060312/jinxin](https://github.com/szm20060312/jinxin) | **[B站演示视频](https://www.bilibili.com/video/BV15ETu6qEpf/)** |
 
 ---
 
