@@ -10,6 +10,7 @@ import {
   cloudLogin,
   cloudLogout,
 } from '../utils/accountManager';
+import { audioManager } from '../utils/audioManager';
 
 export interface AuthContextValue {
   user: string | null;
@@ -46,6 +47,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const logout = useCallback(() => {
+    audioManager.stop();
     cloudLogout();
     setUser(null);
   }, []);
