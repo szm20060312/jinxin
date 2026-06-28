@@ -15,6 +15,7 @@ import { DifficultySelect } from './components/auth/DifficultySelect';
 import { EndingPreview } from './components/auth/EndingPreview';
 import { StoryIntro } from './components/auth/StoryIntro';
 import { SAVE_VERSION } from './data/constants';
+import { audioManager } from './utils/audioManager';
 import type { Difficulty, GameState } from './types';
 
 // 重新开局上下文——深层次组件（Header/GameOverPanel）通知顶层重置难度
@@ -48,6 +49,8 @@ function GameApp() {
   const [gameKey, setGameKey] = useState(0);
 
   const handleResetToMenu = useCallback(() => {
+    // 停止上一局的背景音乐
+    audioManager.stop();
     // 删除旧存档，防止新局读回旧进度
     try {
       localStorage.removeItem(`jinxin_save_${user}`);
