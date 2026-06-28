@@ -1,9 +1,12 @@
-# 《晋·信》
+# 《晋·信》　![version](https://img.shields.io/badge/version-1.0-c4a45a)
 
 > 一盏油灯，一方算盘，一间青砖灰瓦的票号。你执掌的不是账簿，是乱世中比皇权更实在的东西——**白银的流动**。
 >
-> 模拟晋商票号经营 · 文字策略 Web 游戏 · EdgeOne 全栈部署  
-> 🔗 **线上体验**: [jinxin-twlhpwzz.edgeone.cool](https://jinxin-twlhpwzz.edgeone.cool)
+> 模拟晋商票号经营 · 文字策略 Web 游戏 · EdgeOne 全栈部署 · v1.0 正式发布
+
+| 🎮 在线体验 | 📦 源码 |
+|------------|--------|
+| **[jinxin-twlhpwzz.edgeone.cool](https://jinxin-twlhpwzz.edgeone.cool)** | [github.com/szm20060312/jinxin](https://github.com/szm20060312/jinxin) |
 
 ---
 
