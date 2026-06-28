@@ -10,3 +10,7 @@ dist/
   .edgeone
 .codebuddy
 .agents
+
+# 大型文件 / 敏感信息
+video/
+dev_doc/对话历史记录/
