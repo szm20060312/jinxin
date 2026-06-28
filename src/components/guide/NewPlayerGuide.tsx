@@ -101,8 +101,6 @@ const STEPS: GuideStep[] = [
   },
 ];
 
-const GUIDE_STORAGE_PREFIX = 'jinxin_guide_done_';
-
 // ---- 组件 ----
 
 export function NewPlayerGuide() {
@@ -111,27 +109,18 @@ export function NewPlayerGuide() {
   const [visible, setVisible] = useState(false);
   const [step, setStep] = useState(0);
 
-  // 检测首次进入游戏
+  // 每次进入游戏都弹出教程
   useEffect(() => {
     if (!user) return;
-    // 仅在游戏第一季第一天触发
-    if (state.date.year !== 1808 || state.date.season !== 1 || state.date.day !== 1) return;
     if (state.phase === 'game_over') return;
 
-    const key = GUIDE_STORAGE_PREFIX + user;
-    if (localStorage.getItem(key) === '1') return;
-
-    // 延迟弹出，等界面渲染完成
     const timer = setTimeout(() => setVisible(true), 500);
     return () => clearTimeout(timer);
-  }, [user, state.date.year, state.date.season, state.date.day, state.phase]);
+  }, [user, state.phase]);
 
   const completeGuide = useCallback(() => {
-    if (user) {
-      localStorage.setItem(GUIDE_STORAGE_PREFIX + user, '1');
-    }
     setVisible(false);
-  }, [user]);
+  }, []);
 
   const handleSkip = useCallback(() => {
     completeGuide();
